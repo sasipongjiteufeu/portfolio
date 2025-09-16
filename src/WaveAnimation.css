@@ -1,34 +1,17 @@
-.main_container{
-    text-align: center;
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.MyPictureContainer{
+  display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: flex-start; /* stick to the left */
+  height: 100vh; /* example, full height */
 }
-
-.Thesqurt{
-  width: 2em;
-  height:2em;
-  background-color: rgb(146, 219, 219);
-  box-shadow: 5px 10px #946060;
-  border-radius: 5%;
-  z-index: 1;
-  animation-duration: 3s;
-  animation-name: spin_big_goleft;
-  animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
-  animation-fill-mode: forwards ;
-  box-sizing: border-box;
+.MyPicture{
+  padding-left: 50px;
+  border-radius: 50%;
+  width: 30%;
+  display: block;
+  animation: slowly_ShowUp 0.5s forwards;
 }
-@keyframes spin_big_goleft{
-
-  13%{
-    transform: rotate(360deg);
-    transform: translateX(-100px);
-  }
-  100%{
-    transform: rotate(720deg);
-    transform: translateX(5000px);
-  }
+@keyframes slowly_ShowUp{
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }

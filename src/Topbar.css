@@ -1,0 +1,10 @@
+.Topbar_Container{
+    display: flex;
+    background-color: transparent;
+}
+.TopBarItem{
+    display: block;
+    align-items: center;  /* vertical alignment */
+    justify-content: flex-end; /* move items to the right */
+
+}

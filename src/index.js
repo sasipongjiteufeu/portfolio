@@ -4,10 +4,14 @@ import './index.css';
 
 import reportWebVitals from './reportWebVitals';
 import WaveAnimation from './WaveAnimtion';
+import App from './App';
+import Topbar from './Topbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Topbar />
+    <App />
     <WaveAnimation />
   </React.StrictMode>
 );
