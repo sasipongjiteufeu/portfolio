@@ -6,12 +6,17 @@
 }
 .MyPicture{
   padding-left: 50px;
-  border-radius: 50%;
+  border-radius: 10%;
   width: 30%;
   display: block;
-  animation: slowly_ShowUp 0.5s forwards;
+  animation: slowly_ShowUp 1s forwards ease-out;
 }
 @keyframes slowly_ShowUp{
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { 
+    opacity: 0;
+    transform: translate(0,0);
+  }
+  100% { 
+    opacity: 1; 
+    transform: translate(20px,-50px);}
 }

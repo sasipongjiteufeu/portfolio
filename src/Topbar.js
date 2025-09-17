@@ -2,9 +2,15 @@ import "./Topbar.css"
 function Topbar(){
     return(
         <div className="Topbar_Container">
-            <span className="TopBarItem">'
-                Hi
-            </span>
+            <button className="button_Topbar">
+                Content
+            </button>
+            <button className="button_Topbar">
+                Profile
+            </button>
+            <button className="button_Topbar">
+                Previous Project
+            </button>
         </div>
     )
 }

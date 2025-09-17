@@ -1,10 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .Topbar_Container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     background-color: transparent;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
 }
-.TopBarItem{
-    display: block;
-    align-items: center;  /* vertical alignment */
-    justify-content: flex-end; /* move items to the right */
+.button_Topbar{
+    background-color: transparent;
+    padding: 0.8rem 1.4rem;
+    border:none;
+    margin-left: 50px; /* Space between buttons */
+    cursor: pointer;
+    font-family: Garamond, serif;
+    color: aliceblue;
+    font-size: 1.1rem;
+    animation: text_move 1s ease-in-out forwards , text_glow 2s ease-in-out infinite alternate; 
+}
+@-webkit-keyframes text_glow{
+     from{
+        text-shadow: 0 0 10px #fff, 0 0 20px #23a6da, 0 0 30px #23a6da;
+    }
+    to{
+        text-shadow: 2px 2px 20px #fff, 0 0 40px #1e81a8, 0 0 60px #1e81a8;
+    }
+}
+@keyframes text_glow{
+    from{
+        text-shadow: 0 0 10px #fff, 0 0 20px #23a6da, 0 0 30px #23a6da;
+    }
+    to{
+        text-shadow: 2px 2px 20px #fff, 0 0 40px #1e81a8, 0 0 60px #1e81a8;
+    }
+}
 
+@-webkit-keyframes text_move{
+    from{
+        opacity: 0;
+        transform: translate(0,-50px);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
 }
+@keyframes text_move{
+    from{
+        opacity: 0;
+        transform: translate(0,-50px);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+.button_Topbar :hover{
+ 
+}
+
